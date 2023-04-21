@@ -1,0 +1,22 @@
+{
+  "name": "gacharct",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Get random research entry by Gacha!",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "author": "Lastorder-DC",
+  "license": "MIT",
+  "dependencies": {
+    "openrct2-flexui": "^0.1.0-prerelease.12",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "rollup": "^3.17.2"
+  }
+}

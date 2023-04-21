@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"target": "es5",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "ES2020",
+		"moduleResolution": "node",
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"preserveConstEnums": true,
+		"paths": {
+			"@src/*": [ "src/*" ]
+		},
+		"strict": true,
+		"target": "ES5",
+		"lib": [ "ES5" ],
+	},
+	"include": [
+		"./lib/**/*.ts",
+		"./src/**/*.ts",
+		"./tests/**/*.ts",
+		"./**/*.ts"
+	],
+	"noEmit": true
+}
