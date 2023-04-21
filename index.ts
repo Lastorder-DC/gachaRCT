@@ -99,7 +99,10 @@ registerPlugin({
 	targetApiVersion: 70,
 	main: () =>
 	{
-		context.setInterval(() => {park.research.funding = 0;}, 1000)
-		ui.registerMenuItem("연구 가챠", () => gachaWindow.open());
+		// 로컬 플레이시만 동작시킨다
+		if(network.mode == "none") {
+			context.setInterval(() => {park.research.funding = 0;}, 1000)
+			ui.registerMenuItem("연구 가챠", () => gachaWindow.open());
+		}
 	}
 });
